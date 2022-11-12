@@ -13,14 +13,15 @@ fun main() {
     val n = 5
     for (i in 1..n) {
         for (j in 1..n) {
-            print("*")
+            print("* ")
         }
         println()
     }
 }
 
-/* Java code
-void printSquare(int n) {
+/*
+Java code:
+    void printSquare(int n) {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
                 System.out.print("* ");
@@ -28,5 +29,4 @@ void printSquare(int n) {
             System.out.println();
         }
     }
-}
  */
