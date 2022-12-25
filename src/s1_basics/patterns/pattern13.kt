@@ -9,12 +9,27 @@ package s1_basics.patterns
  */
 
 fun main() {
-    var n = 1
-    for (i in 1..5) {
+    val n = 5
+    var num = 1
+    for (i in 1..n) {
         for (j in 1..i) {
-            print(n++)
+            print(num++)
             print(" ")
         }
         println()
     }
 }
+
+/*
+Java code:
+    void printTriangle(int n) {
+        int num = 1;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(num++);
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+ */

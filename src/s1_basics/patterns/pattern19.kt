@@ -13,10 +13,11 @@ package s1_basics.patterns
  */
 
 fun main() {
-    for (i in 5 downTo 1) {
+    val n = 5
+    for (i in n downTo 1) {
         printPattern(i)
     }
-    for (i in 1..5) {
+    for (i in 1..n) {
         printPattern(i)
     }
 }

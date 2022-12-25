@@ -9,7 +9,8 @@ A B C D E
  */
 
 fun main() {
-    for(i in 0..4) {
+    val n = 5
+    for(i in 0 until n) {
         var alphabet = 'E' - i
         for(j in 0..i) {
             print(alphabet++)

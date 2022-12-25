@@ -8,8 +8,9 @@ ABCDCBA
  */
 
 fun main() {
-    for (i in 1..4) {
-        for (j in 1..4 - i) {
+    val n = 4
+    for (i in 1..n) {
+        for (j in 1..n - i) {
             print(" ")
         }
         var c = 'A'
@@ -23,3 +24,23 @@ fun main() {
         println()
     }
 }
+
+/*
+Java code:
+    void printTriangle(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            char c = 'A';
+            for (int j = 1; j <= i; j++) {
+                System.out.print(c++);
+            }
+            c--;
+            for (int j = 1; j < i; j++) {
+                System.out.print(--c);
+            }
+            System.out.println();
+        }
+    }
+ */

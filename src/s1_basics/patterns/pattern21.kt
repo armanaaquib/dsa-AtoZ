@@ -9,9 +9,10 @@ package s1_basics.patterns
  */
 
 fun main() {
-    for (i in 1..5) {
-        for (j in 1..4) {
-            if (i == 1 || i == 5 || j == 1 || j == 4) {
+    val n = 5
+    for (i in 1..n) {
+        for (j in 1 until n) {
+            if (i == 1 || i == n || j == 1 || j == n - 1) {
                 print("*")
             } else {
                 print(" ")

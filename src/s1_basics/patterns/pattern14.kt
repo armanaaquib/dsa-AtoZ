@@ -9,7 +9,8 @@ ABCDE
  */
 
 fun main() {
-    for(i in 1..5) {
+    val n = 5
+    for(i in 1..n) {
         var c = 'A'
         for(j in 1..i) {
             print(c++)
@@ -17,3 +18,16 @@ fun main() {
         println()
     }
 }
+
+/*
+Java code:
+    void printTriangle(int n) {
+        for(int i = 1; i <= n; i++) {
+            char c = 'A';
+            for(int j = 1; j <= i; j++) {
+                System.out.print(c++);
+            }
+            System.out.println();
+        }
+    }
+ */

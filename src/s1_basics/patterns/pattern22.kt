@@ -11,40 +11,41 @@ package s1_basics.patterns
  */
 
 fun main() {
-    for (i in 1..4) {
-        var n = 4
+    val n = 4
+    for (i in 1..n) {
+        var num = n
         for (j in 1..i) {
-            print(n--)
+            print(num--)
             print(" ")
         }
-        n++
-        for (j in 1..(7 - 2 * i)) {
-            print(n)
+        num++
+        for (j in 1..(n * 2 - 1 - 2 * i)) {
+            print(num)
             print(" ")
         }
         for (j in 1..i) {
-            if(n == 1) {
-                n = 2
+            if(num == 1) {
+                num = 2
                 continue
             }
-            print(n++)
+            print(num++)
             print(" ")
         }
         println()
     }
-    for (i in 3 downTo 1) {
-        var n = 4
+    for (i in n - 1 downTo 1) {
+        var num = n
         for (j in 1..i) {
-            print(n--)
+            print(num--)
             print(" ")
         }
-        n++
-        for (j in 1..(7 - 2 * i)) {
-            print(n)
+        num++
+        for (j in 1..(n * 2 - 1 - 2 * i)) {
+            print(num)
             print(" ")
         }
         for (j in 1..i) {
-            print(n++)
+            print(num++)
             print(" ")
         }
         println()
