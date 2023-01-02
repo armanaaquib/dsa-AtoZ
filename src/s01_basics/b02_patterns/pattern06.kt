@@ -1,4 +1,4 @@
-package s1_basics.patterns
+package s01_basics.b02_patterns
 
 /* Pattern
 12345

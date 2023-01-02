@@ -1,15 +1,16 @@
-package s1_basics.patterns
+package s01_basics.b02_patterns
 
 /* Pattern
-ABCDE
-ABCD
-ABC
-AB
 A
+AB
+ABC
+ABCD
+ABCDE
  */
 
 fun main() {
-    for(i in 5 downTo 1) {
+    val n = 5
+    for(i in 1..n) {
         var c = 'A'
         for(j in 1..i) {
             print(c++)
@@ -21,7 +22,7 @@ fun main() {
 /*
 Java code:
     void printTriangle(int n) {
-        for(int i = n; i >= 1; i--) {
+        for(int i = 1; i <= n; i++) {
             char c = 'A';
             for(int j = 1; j <= i; j++) {
                 System.out.print(c++);

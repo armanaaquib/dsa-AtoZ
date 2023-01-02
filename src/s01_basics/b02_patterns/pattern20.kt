@@ -1,23 +1,23 @@
-package s1_basics.patterns
+package s01_basics.b02_patterns
 
 /* Pattern
-**********
-****  ****
-**      **
-*        *
 *        *
 **      **
 ***    ***
 ****  ****
 **********
+****  ****
+***    ***
+**      **
+*        *
  */
 
 fun main() {
     val n = 5
-    for (i in n downTo 1) {
+    for (i in 1..n) {
         printPattern(i)
     }
-    for (i in 1..n) {
+    for (i in n - 1  downTo 1) {
         printPattern(i)
     }
 }
