@@ -1,4 +1,4 @@
-package s01_basics.b05recursion
+package s01_basics.b05_recursion
 
 /*
 Print GFG n times

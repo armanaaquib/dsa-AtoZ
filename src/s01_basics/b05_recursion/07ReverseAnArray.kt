@@ -1,4 +1,4 @@
-package s01_basics.b05recursion
+package s01_basics.b05_recursion
 
 fun reverseArray(array: MutableList<Int>, idx: Int = 0) {
     if(idx >= array.size / 2) return
